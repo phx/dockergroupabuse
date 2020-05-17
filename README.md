@@ -6,7 +6,8 @@ This interactive script allows you to abuse the `docker` group to get root shell
 
 Copy the contents of [`rootshell.sh`](rootshell.sh) to the clipboard and paste into `rootshell.sh` on the remote Docker host system.
 
-### Remote Docker Host
+### Remote Docker Host:
+
 ```
 chmod +x rootshell.sh
 ./rootshell.sh
