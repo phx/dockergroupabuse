@@ -1,6 +1,6 @@
 # dockergroupabuse
 
-This interactive script allows you to abuse the `docker` group to get root shells from minimal images that are already stored locally on the Docker host.
+This interactive script allows you to abuse the `docker` group to get root shells from minimal images that are already stored locally on the Docker host system.
 
 ## Usage
 
@@ -12,10 +12,8 @@ chmod +x rootshell.sh
 ./rootshell.sh
 ```
 
-Take a look at [`rootshell.sh`](rootshell.sh) and feel free to modify as necessary, but this script has worked with all images and systems I have tested.
+Feel free to modify [`rootshell.sh`](rootshell.sh) as necessary, but this script has worked with all images and systems I have tested.
 
 ### About `sh` vs `bash`
 
-I have defaulted to using `sh` instead of `bash` in the commands in order to be cross-compatible with Alpine-based images and such.
-
-Feel free to call `bash` from `sh` after getting the shell.
+I have defaulted to using `sh` instead of `bash` in the commands in order to be cross-compatible with Alpine-based minimal images and such.  Feel free to call `bash` from `sh` after getting the shell.
