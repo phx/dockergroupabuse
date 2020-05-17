@@ -8,5 +8,5 @@ Build the Docker image on the host using the Dockerfiles provided.
 
 ```
 docker build -t [image-name] .
-docker run --privileged --network host -itv /:/host [image-name]
+docker run --rm --privileged --pid=host --net=host -itv /:/host [image-name]
 ```
