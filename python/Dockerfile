@@ -1,5 +1,5 @@
 FROM python
 
-RUN echo 'chroot /host /bin/bash' >> /root/.bashrc
+RUN echo "$(which chroot) /host /bin/sh" >> /root/.profile
 
-ENTRYPOINT "/bin/bash"
+ENTRYPOINT ["/bin/sh", "-l"]
