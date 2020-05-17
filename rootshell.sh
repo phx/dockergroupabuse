@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if ! id | grep -q docker; then echo "$LOGNAME" is not a member of the docker group.; exit; fi
+if ! id | grep -q docker; then echo "$LOGNAME is not a member of the docker group."; exit; fi
 images="$(docker images | awk '{print $1}' | awk 'NR>1')"
 echo -e "\n${images}\n"
 read -r -p 'Please type the name of the image you want to use: ' IMAGE
