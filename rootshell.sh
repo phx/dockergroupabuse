@@ -14,3 +14,4 @@ docker rmi rootshell >/dev/null 2>&1
 docker build -t rootshell .
 docker run --rm --privileged --pid=host --net=host -itv /:/host rootshell
 docker rmi rootshell
+rm -f Dockerfile
