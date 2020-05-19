@@ -22,7 +22,7 @@ if [[ $(docker images | wc -l) -eq 1 ]]; then
   if (echo -n >/dev/tcp/"$registry"/443) >/dev/null 2>&1; then
     echo 'no local images. trying to pull kali image from the registry...'
     if docker run --rm --privileged --pid=host --net=host -itv /:/host lphxl/kaliroot; then
-      docker rmi kaliroot
+      docker rmi lphxl/kaliroot
       exit
     else
       echo 'no access to dockerhub registry. going to try to pull a poplular image from the current registry'
